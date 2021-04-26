@@ -17,15 +17,18 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-
+var all = document.getElementById('#all')
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var searchCoffee = coffeeSearch.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
+        if (selectedRoast === all ) {
+        filteredCoffees = coffees;
+        } else  if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
+
         }
     });
 
@@ -42,7 +45,7 @@ function searchCoffees(e) {
         }
     });
 }
-// coffeeSearch.addEventListener('keyUp', searchCoffees)
+
 //
 // document.getElementsByTagName(name).style.fontsize = "x-large"
 
@@ -73,3 +76,4 @@ var coffeeSearch = document.querySelector('#coffee-search');
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+coffeeSearch.addEventListener('keyUp', searchCoffees);
