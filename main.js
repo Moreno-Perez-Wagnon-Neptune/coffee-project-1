@@ -60,7 +60,20 @@ function searchCoffees(e) {
 //         })
 //     })
 // }
-
+// (function() {
+//     // Get the body element (notice we need to use index 0 of the array!)
+//     var bodyElement = document.getElementsByName('');
+//
+//     // Change the body font color
+//     bodyElement.style.color = '#444'; // Dark grey
+//
+//     bodyElement.style.fontFamily = "Helvetica, Verdana, Sans-Serif";
+// })();
+// car.honk = function () {
+//     alert("Honk! Honk!");
+// };
+// var name = coffees.name;
+// name.style.color = 'red';
 //
 // document.getElementsByTagName(name).style.fontsize = "x-large"
 
