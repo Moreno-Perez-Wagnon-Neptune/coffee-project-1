@@ -2,12 +2,18 @@ table {
     border-collapse: collapse;
     margin: 15px 0;
 
+
 }
 
 td, th {
+    display: flex;
     border: none;
-    padding: 5px 10px;
+    padding: 0;
+
+
 }
 tbody {
     color:hotpink;
 }
+
+

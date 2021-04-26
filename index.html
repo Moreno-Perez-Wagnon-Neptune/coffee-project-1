@@ -12,16 +12,17 @@
     <hr style="border: none; height: 1px; background-color: #333;width: 95%">
 
     <div class="container d-flex flex-row">
-        <table class="col-6 mr-5">
+        <table class="col-6 mr-5" style=" padding: 0" >
             <thead>
-            <tr class="d-none">
+            <tr class="d-none" style="display: flex; justify-content: center">
                 <th>ID</th>
                 <th>NAME</th>
                 <th>ROAST</th>
             </tr>
             </thead>
-            <tbody id="coffees"></tbody>
+            <tbody class="col-12" style="display: flex; flex-direction: column;" id="coffees"></tbody>
         </table>
+        <!-- Not the one -->
         <div class="form-group col-6 justify-content-left ml-5">
             <form class="d-flex row">
                 <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Roast</label>
