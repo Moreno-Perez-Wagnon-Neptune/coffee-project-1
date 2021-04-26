@@ -42,6 +42,24 @@ function searchCoffees(e) {
     });
 
 }
+// filter coffees
+
+
+// function filterCoffees(e) {
+//     var searchBar = document.forms['coffees'].querySelector('input');
+//     searchBar.addEventListener('keyup', function (e) {
+//         var term = e.target.value.toLowerCase()
+//         var title = array.getElementsByTagName('name')
+//         Array.from(coffees).forEach(function (coffee) {
+//             var coffeeName = coffees.name;
+//             if (coffeeName.toLowerCase().indexOf(term) != -1) {
+//                 title.style.display = 'block'
+//             } else {
+//                 title.style.display = 'none'
+//             }
+//         })
+//     })
+// }
 
 //
 // document.getElementsByTagName(name).style.fontsize = "x-large"
