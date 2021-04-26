@@ -17,33 +17,30 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-var all = document.getElementById('#all')
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var searchCoffee = coffeeSearch.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (selectedRoast === all ) {
+        if(selectedRoast !== 'light'&& selectedRoast !== 'medium'&&selectedRoast !== 'dark'){
         filteredCoffees = coffees;
-        } else  if (coffee.roast === selectedRoast) {
+        }
+        else if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
-
         }
     });
-
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-
 function searchCoffees(e) {
-    e.preventDefault();
     var searchCoffee = coffeeSearch.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.name === searchCoffee) {
-            filteredCoffees.push(coffee);
+            console.log(searchCoffee)
         }
     });
+
 }
 
 //
