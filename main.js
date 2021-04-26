@@ -18,10 +18,9 @@ var coffees = [
 ];
 
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
+    var html = '<tr class="coffee d-flex " >';
     html += '<td style="font-size: xx-large; color: black; font-family: Apple SD Gothic Neo,sans-serif; font-weight: bold">' + coffee.name + '</td>';
-
-    html += '<td class="d-flex flex-row" style="font-size: large; color: gray; font-family: Apple SD Gothic Neo,sans-serif; font-weight: lighter; ">' + coffee.roast + '</td>';
+    html += '<td class="d-flex flex-row " style=" font-size: large; color: gray; font-family: Apple SD Gothic Neo,sans-serif; font-weight: lighter; ">' + coffee.roast + '</td>';
     html += '</tr>';
 
     return html;

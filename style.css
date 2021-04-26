@@ -6,14 +6,10 @@ table {
 }
 
 td, th {
-    display: flex;
     border: none;
-    padding: 0;
+    padding: 5px;
+    text-align: end;
 
 
 }
-tbody {
-    color:hotpink;
-}
-
 

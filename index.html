@@ -11,8 +11,8 @@
     <h1 class="text-center">Coffee!</h1>
     <hr style="border: none; height: 1px; background-color: #333;width: 95%">
 
-    <div class="container d-flex flex-row">
-        <table class="col-6 mr-5" style=" padding: 0" >
+    <div class="container row ">
+        <table class=" mr-5" style=" padding: 0" >
             <thead>
             <tr class="d-none" style="display: flex; justify-content: center">
                 <th>ID</th>
@@ -22,25 +22,46 @@
             </thead>
             <tbody class="col-12" style="display: flex; flex-direction: column;" id="coffees"></tbody>
         </table>
-        <!-- Not the one -->
-        <div class="form-group col-6 justify-content-left ml-5">
-            <form class="d-flex row">
-                <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Roast</label>
-                <select id="roast-selection">
-                    <option>all</option>
-                    <option>light</option>
-                    <option>medium</option>
-                    <option>dark</option>
-                </select>
-            </form>
-            <form class="d-flex row">
-                <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Coffee Name</label>
-                <input id="coffee-search" type="text" class="form-control">
-            </form>
-            <input id="submit" type="submit" class="d-flex col-12 bg-primary p-0" size="50" />
-        </div>
     </div>
+    <div class="col-6">
+        <!-- Not the one -->
+        <div class=" d-flex row " >
+            <div class="form-group col-12 justify-content-left ml-5">
+                <form class="d-flex row">
+                    <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Roast</label>
+                    <select class="col-12" id="roast-selection">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                </form>
+                <form class="d-flex row">
+                    <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Coffee Name</label>
+                    <input id="coffee-search" type="text" class="form-control">
+                </form>
+                <input id="submit" type="submit" class="d-flex col-12 bg-primary p-0" size="50" />
+            </div>
+        </div>
 
+    <h1>Add a Coffee</h1>
+    <div class="form-group justify-content-left ml-5">
+        <form class="d-flex row">
+            <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Roast</label>
+            <select class="col-12" id="EMPTY">
+                <option>all</option>
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+        </form>
+        <form class="d-flex row">
+            <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Coffee Name</label>
+            <input id="EMPTY_SEARCH" type="text" class="form-control">
+        </form>
+        <input id="submit-2" type="submit" class="d-flex col-12 bg-primary p-0" size="50" />
+            </div>
+        </div>
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
