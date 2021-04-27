@@ -18,9 +18,9 @@ var coffees = [
 ];
 
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee d-flex flex-row card flex-end" >';
-    html += '<td class="d-inline-flex flex-row" style="font-size: xx-large; color: black; font-family: Apple SD Gothic Neo,sans-serif; font-weight: bold">' + coffee.name + '</td>';
-    html += '<td class="d-inline-flex flex-row text-bottom" style=" font-size: large; color: gray; font-family: Apple SD Gothic Neo,sans-serif; font-weight: lighter; ">' + coffee.roast + '</td>';
+    var html = '<tr class="coffee d-flex flex-row card flex-end col-6" style="height: 80px">';
+    html += '<td class="card-body d-inline-flex flex-row align-self-center p-0 " style="font-size: xx-large; color: black; font-family: Apple SD Gothic Neo,sans-serif; font-weight: bold">' + coffee.name + '</td>';
+    html += '<td class="card-text d-inline-flex flex-row align-self-center p-0" style=" font-size: large; color: gray; font-family: Apple SD Gothic Neo,sans-serif; font-weight: lighter; ">' + coffee.roast + '</td>';
     html += '</tr>';
 
     return html;
@@ -55,8 +55,10 @@ function  addNewCoffee(e) {
     // var newCoffee = [];
     // newCoffee = coffees
     var added = document.getElementById('addCoffee').value
-    coffees.push('hello');
-    coffees.push('i');
+    coffees.push({
+        name: addCoffee.value,
+        roast: newRoast.value
+    });
     tbody.innerHTML = renderCoffees(coffees);
     console.log(renderCoffee(coffees));
 }
