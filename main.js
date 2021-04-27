@@ -18,9 +18,9 @@ var coffees = [
 ];
 
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee d-flex flex-row card flex-end col-6 border-0" style="height: 80px">';
-    html += '<td class="card-body  flex-row flex-grow-0 align-self-center p-1 mr-0 " style="font-size: xx-large; color: black; font-family: Apple SD Gothic Neo,sans-serif; font-weight: bold">' + coffee.name + '</td>';
-    html += '<td class="card-text d-inline-flex flex-grow-1 flex-row align-self-center p-0 mr-0" style=" font-size: large; color: gray; font-family: Apple SD Gothic Neo,sans-serif; font-weight: lighter; ">' + coffee.roast + '</td>';
+    var html = '<tr class="coffee d-flex flex-row card flex-end col-6 border-0" style="height: 80px; background: none; ">';
+    html += '<td class="card-body  flex-row flex-grow-0 align-self-center p-1 mr-0 " style="font-size: xx-large; background: none; color: white; font-family: Apple SD Gothic Neo,sans-serif; font-weight: bold">' + coffee.name + '</td>';
+    html += '<td class="card-text d-inline-flex flex-grow-1 flex-row align-self-center p-0 mr-0" style=" background: none; font-size: large; color: gray; font-family: Apple SD Gothic Neo,sans-serif; font-weight: lighter; ">' + coffee.roast + '</td>';
     html += '</tr>';
 
     return html;

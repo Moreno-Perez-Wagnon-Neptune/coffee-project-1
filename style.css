@@ -18,3 +18,22 @@ select {
     font-weight: bold;
     font-family: 'Amatic SC', cursive;
 }
+
+/*.container{*/
+/*    background-image: url("img/cofee-shop-white.jpeg")*/
+
+/*}*/
+.col-7 {
+    background-color: black;
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+
+}
+body {
+    background-image: url("img/cofee-shop-white.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200%;
+    -webkit-background-size: cover;
+}
