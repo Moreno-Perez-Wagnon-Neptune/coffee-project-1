@@ -33,12 +33,12 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-var filteredCoffees = [];
+// var filteredCoffees = [];
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var searchCoffee = coffeeSearch.value;
-    // var filteredCoffees = [];
+    var filteredCoffees = [];
     coffees.forEach(function (coffee) {
         if (selectedRoast !== 'light' && selectedRoast !== 'medium' && selectedRoast !== 'dark') {
             filteredCoffees = coffees;
@@ -49,13 +49,16 @@ function updateCoffees(e) {
     });
 }
 
-// var newCoffee = [];
-function  addNewCoffee() {
-    var added = document.getElementById('addCoffee').value
-    filteredCoffees.push(added);
-    console.log(added);
-    tbody.innerHTML = renderCoffees(filteredCoffees);
 
+function  addNewCoffee(e) {
+    e.preventDefault();
+    // var newCoffee = [];
+    // newCoffee = coffees
+    var added = document.getElementById('addCoffee').value
+    coffees.push('hello');
+    coffees.push('i');
+    tbody.innerHTML = renderCoffees(coffees);
+    console.log(renderCoffee(coffees));
 }
 
 
@@ -67,7 +70,9 @@ var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var coffeeSearch = document.querySelector('#coffee-search');
 var addCoffee = document.querySelector('#addCoffee');
+var newRoast = document.querySelector('#new-roast');
 var submit2 = document.querySelector('#submit-2');
+
 
 tbody.innerHTML = renderCoffees(coffees);
 
