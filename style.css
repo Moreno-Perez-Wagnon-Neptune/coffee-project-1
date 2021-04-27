@@ -9,5 +9,12 @@ td, th {
     box-sizing: border-box;
     text-align: start;
 }
-
-
+img {
+    height: 200px;
+    width: 200px;
+}
+select {
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+}

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 </head>
-<body class="container">
-    <h1 class="text-center">Coffee!</h1>
+<body class="container" >
+
+    <h1 class="text-center" ><img src="img/black-coffee.jpeg"> COFFEE </h1>
     <hr style="border: none; height: 1px; background-color: #333;width: 95%">
     <div class="container row">
         <div class="container col-7">
@@ -23,13 +26,13 @@
                 <tbody class="container d-inline-flex flex-wrap" id="coffees"></tbody>
             </table>
         </div>
-        <div class="d-flex flex-column col-5">
+        <div style ="height: 100%;" class="d-flex flex-column col-5">
             <!-- Not the one -->
-            <div class="mb-3" style="border-bottom: 1px solid gray" >
+            <div class="mb-3" style="border-bottom: 1px solid lightgray" >
                 <div class="form-group col-12" style="padding: 0">
-                    <form class="d-flex row">
-                        <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Roast</label>
-                        <select class="col-12" id="roast-selection">
+                    <form class="d-flex row form-group">
+                        <h4 for="roast-selection" class="col-12 p-0" style=" font-size: x-large; font-weight: bold; font-family: 'Amatic SC', cursive; ">Roast</h4>
+                        <select class="col-12 custom-select " id="roast-selection">
                             <option>all</option>
                             <option>light</option>
                             <option>medium</option>
@@ -37,21 +40,21 @@
                         </select>
                     </form>
                     <form class="d-flex row">
-                        <label for="roast-selection" class="" style="font-weight: bold">Coffee Name</label>
-                        <input id="coffee-search" type="text" class="form-control mb-3">
+                        <h4 for="roast-selection" class="" style=" font-size: x-large; font-weight: bold; font-family: 'Amatic SC', cursive; ">Coffee Name</h4>
+                        <input  id="coffee-search" type="text" class="form-control mb-3">
 
-                        <input  id="submit" type="submit" class=" btn btn-primary btn-lg btn-block" />
+                        <input style="background: #a0593c; color: white;" id="submit" type="submit" class=" btn btn btn-lg btn-block" />
                     </form>
 
                 </div>
             </div>
 
 
-            <h2 class ="text-center">Add a Coffee</h2>
+            <h3 class ="text-center" style=" font-size: xxx-large; font-weight: bold; font-family: 'Amatic SC', cursive; ">Add a Coffee</h3>
             <div class="d-flex flex-column form-group">
-                <form class="d-flex row">
-                    <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Roast</label>
-                    <select class="col-12" id="new-roast">
+                <form class="d-flex row form-group">
+                    <h4 for="roast-selection" class="col-12 p-0" style=" font-size: x-large; font-weight: bold; font-family: 'Amatic SC', cursive; ">Roast</h4>
+                    <select class="col-12 custom-select" id="new-roast">
                         <option>all</option>
                         <option>light</option>
                         <option>medium</option>
@@ -59,10 +62,10 @@
                     </select>
                 </form>
                 <form class="d-flex row">
-                    <label for="roast-selection" class="col-12 p-0" style="font-weight: bold">Coffee Name</label>
+                    <h4 for="roast-selection" class="col-12 p-0" style=" font-size: x-large; font-weight: bold; font-family: 'Amatic SC', cursive; ">Coffee Name</h4>
                     <input id="addCoffee" type="text" class="form-control mb-3">
 
-                    <input id="submit-2" type="submit" class="btn btn-primary btn-lg btn-block" />
+                    <input style="background: #a0593c; color: white;" id="submit-2" type="submit" class="btn btn btn-lg btn-block" />
                 </form>
 
             </div>
