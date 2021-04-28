@@ -54,11 +54,13 @@ function  addNewCoffee(e) {
     e.preventDefault();
     // var newCoffee = [];
     // newCoffee = coffees
-    var added = document.getElementById('addCoffee').value
+    // var added = document.getElementById('addCoffee').value
     coffees.push({
+        id: coffees.length,
         name: addCoffee.value,
         roast: newRoast.value
     });
+
     tbody.innerHTML = renderCoffees(coffees);
     console.log(renderCoffee(coffees));
 }
